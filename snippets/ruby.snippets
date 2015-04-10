@@ -710,7 +710,11 @@ snippet aft
 		${0}
 	end
 snippet let
-	let(:${1:object}) { ${0} }
+	let(:${1}) { ${0} }
+snippet letd
+	let(:${1}) do
+		${0}
+	end
 snippet let!
 	let!(:${1:object}) { ${0} }
 snippet subj
