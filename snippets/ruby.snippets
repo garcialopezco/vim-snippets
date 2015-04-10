@@ -721,6 +721,8 @@ snippet spec
 	specify { subject.${0} }
 snippet exp
 	expect(${1:object}).to ${0}
+snippet expn
+	expect(${1:object}).not_to ${0}
 snippet expb
 	expect { ${1:object} }.to ${0}
 snippet experr
@@ -737,5 +739,9 @@ snippet its
 	its(:${1:method}) { should ${0} }
 snippet is
 	it { should ${0} }
+snippet iet
+	it { is_expected.to ${0} }
 snippet isn
 	it { should_not ${0} }
+snippet ient
+	it { is_expected.not_to ${0} }
