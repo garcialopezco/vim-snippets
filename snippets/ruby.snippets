@@ -688,15 +688,19 @@ snippet mthrow
 snippet desc
 	describe ${1:`substitute(substitute(vim_snippets#Filename(), '_spec$', '', ''), '\(_\|^\)\(.\)', '\u\2', 'g')`} do
 		${0}
-	end
+	end # describe
 snippet descm
-	describe '${1:#method}' do
+	describe "#${1:method}" do
 		${0:pending 'Not implemented'}
-	end
+	end # describe
+snippet desccm
+	describe ".${1:method}" do
+		${0:pending 'Not implemented'}
+	end # describe
 snippet cont
-	context '${1:message}' do
+	context "${1:message}" do
 		${0}
-	end
+	end # context
 snippet bef
 	before :${1:each} do
 		${0}
