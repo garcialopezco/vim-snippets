@@ -728,9 +728,9 @@ snippet experr
 snippet shared
 	shared_examples ${0:'shared examples name'}
 snippet ibl
-	it_behaves_like ${0:'shared examples name'}
+	it_behaves_like ${0:"shared examples name"}
 snippet it
-	it '${1:spec_name}' do
+	it "${1:spec_name}" do
 		${0}
 	end
 snippet its
